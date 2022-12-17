@@ -1,5 +1,6 @@
 <template>
   <HelloWorld />
+  <h1>Koala</h1>
 </template>
 
 <script>
