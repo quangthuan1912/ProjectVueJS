@@ -1,22 +1,22 @@
 // Styles
-import '@fortawesome/fontawesome-free/css/all.css';
 import '@mdi/font/css/materialdesignicons.css'
-import 'vuetify/styles'
+import '@fortawesome/fontawesome-free/css/all.css';
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
+import 'vuetify/styles'
+
 // Vuetify
 import { createVuetify } from 'vuetify'
 
 export default createVuetify({
+  // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
   icons: {
-    iconfont: 'md' || 'fa' || 'md'
+    iconfont: 'md' || 'fa' || 'mdi'
   },
   theme: {
     themes: {
-      light: {
-        
+      dark: {
+        background: '#242424'
       }
     }
   }
-}
-  // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
-)
+})
