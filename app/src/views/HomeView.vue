@@ -1,19 +1,21 @@
+<!-- eslint-disable no-unused-vars -->
 <template>
-  <HelloWorld />
+  <SideBar />
   <h1>Koala</h1>
 </template>
 
 <script>
+
 import { defineComponent } from 'vue';
 
 // Components
-import HelloWorld from '../components/HelloWorld.vue';
+import SideBar from '@/components/SideBar.vue';
 
 export default defineComponent({
   name: 'HomeView',
 
   components: {
-    HelloWorld,
-  },
+    SideBar
+},
 });
 </script>
