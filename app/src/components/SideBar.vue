@@ -19,28 +19,28 @@
               <a
                 href="#"
                 class="d-flex align-items-center justify-content-center"
-                ><span class="fa fa-facebook"
+                ><span class="fab fa-facebook-f"
                   ><i class="sr-only">Facebook</i></span
                 ></a
               >
               <a
                 href="#"
                 class="d-flex align-items-center justify-content-center"
-                ><span class="fa fa-twitter"
+                ><span class="fab fa-twitter"
                   ><i class="sr-only">Twitter</i></span
                 ></a
               >
               <a
                 href="#"
                 class="d-flex align-items-center justify-content-center"
-                ><span class="fa fa-instagram"
+                ><span class="fab fa-instagram"
                   ><i class="sr-only">Instagram</i></span
                 ></a
               >
               <a
                 href="#"
                 class="d-flex align-items-center justify-content-center"
-                ><span class="fa fa-dribbble"
+                ><span class="fab fa-dribbble"
                   ><i class="sr-only">Dribbble</i></span
                 ></a
               >
