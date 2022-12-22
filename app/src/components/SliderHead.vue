@@ -8,7 +8,7 @@
       <div
         class="row no-gutters slider-text align-items-center justify-content-center"
       >
-        <div class="col-md-8 ftco-animate d-flex align-items-end">
+        <div class="col-md-8 d-flex align-items-end">
           <div class="text w-100 text-center">
             <h1 class="mb-4">
               Good <span>Drink</span> for Good <span>Moments</span>.
@@ -29,7 +29,7 @@
     <div class="container">
       <div class="row no-gutters">
         <div class="col-md-4 d-flex">
-          <div class="intro d-lg-flex w-100 ftco-animate">
+          <div class="intro d-lg-flex w-100">
             <div class="icon">
               <span class="flaticon-support"></span>
             </div>
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="col-md-4 d-flex">
-          <div class="intro color-1 d-lg-flex w-100 ftco-animate">
+          <div class="intro color-1 d-lg-flex w-100">
             <div class="icon">
               <span class="flaticon-cashback"></span>
             </div>
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="col-md-4 d-flex">
-          <div class="intro color-2 d-lg-flex w-100 ftco-animate">
+          <div class="intro color-2 d-lg-flex w-100">
             <div class="icon">
               <span class="flaticon-free-delivery"></span>
             </div>
@@ -78,11 +78,7 @@
 <script>
 export default {
   name: 'SliderHead',
-  data() {
-    return {
-      image: '../assets/images/bg_2.jpg'
-    }
-  }
+  
 };
 </script>
 
