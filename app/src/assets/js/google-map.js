@@ -1,6 +1,8 @@
 
 var google;
-
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions

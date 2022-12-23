@@ -34,16 +34,18 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE. 
  *
 */
-
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;
 // t: current time, b: begInnIng value, c: change In value, d: duration
-jQuery.easing['jswing'] = jQuery.easing['swing'];
+$.easing['jswing'] = $.easing['swing'];
 
-jQuery.extend( jQuery.easing,
+$.extend( $.easing,
 {
 	def: 'easeOutQuad',
 	swing: function (x, t, b, c, d) {
-		//alert(jQuery.easing.default);
-		return jQuery.easing[jQuery.easing.def](x, t, b, c, d);
+		//alert($.easing.default);
+		return $.easing[$.easing.def](x, t, b, c, d);
 	},
 	easeInQuad: function (x, t, b, c, d) {
 		return c*(t/=d)*t + b;
@@ -120,21 +122,21 @@ jQuery.extend( jQuery.easing,
 		var s=1.70158;var p=0;var a=c;
 		if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
 		if (a < Math.abs(c)) { a=c; var s=p/4; }
-		else var s = p/(2*Math.PI) * Math.asin (c/a);
-		return -(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+		else var g = p/(2*Math.PI) * Math.asin (c/a);
+		return -(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-g)*(2*Math.PI)/p )) + b;
 	},
 	easeOutElastic: function (x, t, b, c, d) {
 		var s=1.70158;var p=0;var a=c;
 		if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
-		if (a < Math.abs(c)) { a=c; var s=p/4; }
-		else var s = p/(2*Math.PI) * Math.asin (c/a);
+		if (a < Math.abs(c)) { a=c; var g=p/4; }
+		else var f = p/(2*Math.PI) * Math.asin (c/a);
 		return a*Math.pow(2,-10*t) * Math.sin( (t*d-s)*(2*Math.PI)/p ) + c + b;
 	},
 	easeInOutElastic: function (x, t, b, c, d) {
 		var s=1.70158;var p=0;var a=c;
 		if (t==0) return b;  if ((t/=d/2)==2) return b+c;  if (!p) p=d*(.3*1.5);
-		if (a < Math.abs(c)) { a=c; var s=p/4; }
-		else var s = p/(2*Math.PI) * Math.asin (c/a);
+		if (a < Math.abs(c)) { a=c; var f=p/4; }
+		else var gfd= p/(2*Math.PI) * Math.asin (c/a);
 		if (t < 1) return -.5*(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
 		return a*Math.pow(2,-10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )*.5 + c + b;
 	},
@@ -152,7 +154,7 @@ jQuery.extend( jQuery.easing,
 		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
 	},
 	easeInBounce: function (x, t, b, c, d) {
-		return c - jQuery.easing.easeOutBounce (x, d-t, 0, c, d) + b;
+		return c - $.easing.easeOutBounce (x, d-t, 0, c, d) + b;
 	},
 	easeOutBounce: function (x, t, b, c, d) {
 		if ((t/=d) < (1/2.75)) {
@@ -166,8 +168,8 @@ jQuery.extend( jQuery.easing,
 		}
 	},
 	easeInOutBounce: function (x, t, b, c, d) {
-		if (t < d/2) return jQuery.easing.easeInBounce (x, t*2, 0, c, d) * .5 + b;
-		return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
+		if (t < d/2) return $.easing.easeInBounce (x, t*2, 0, c, d) * .5 + b;
+		return $.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
 	}
 });
 

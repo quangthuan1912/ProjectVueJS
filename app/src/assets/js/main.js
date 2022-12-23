@@ -1,4 +1,7 @@
-(function($) {
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;
+(function ($) {
 
 	"use strict";
 
@@ -80,7 +83,7 @@
 
 
 	$('#dropdown04').on('show.bs.dropdown', function () {
-	  console.log('show');
+console.log('show');
 	});
 
 	// scroll
@@ -135,11 +138,11 @@
 						num = $this.data('number');
 						console.log(num);
 					$this.animateNumber(
-					  {
-					    number: num,
-					    numberStep: comma_separator_number_step
-					  }, 7000
-					);
+					{
+					number: num,
+					numberStep: comma_separator_number_step
+					}, 7000
+				);
 				});
 				
 			}
@@ -153,7 +156,6 @@
 	var contentWayPoint = function() {
 		var i = 0;
 		$('.ftco-animate').waypoint( function( direction ) {
-
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
 				
 				i++;
@@ -222,5 +224,5 @@
   $('[data-toggle="popover"]').popover()
 	$('[data-toggle="tooltip"]').tooltip()
 
-})(jQuery);
+})($);
 

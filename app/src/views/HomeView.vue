@@ -246,7 +246,7 @@
         </div>
         <div class="row ">
           <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
+            <div class="carousel-testimony ftco-owl">
               <div class="item">
                 <div class="testimony-wrap py-4">
                     <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span>
@@ -254,7 +254,7 @@
                 <div class="text">
                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 <div class="d-flex align-items-center">
-                    <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    <div class="user-img" :style="{'background-image': 'url(' + require('../../src/assets/images/person_1.jpg') + ')'}"></div>
                     <div class="pl-3">
                         <p class="name">Roger Scott</p>
                         <span class="position">Marketing Manager</span>
@@ -269,21 +269,7 @@
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-						<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-						<div class="pl-3">
-							<p class="name">Roger Scott</p>
-							<span class="position">Marketing Manager</span>
-						</div></div>
-                </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-							<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+							<div class="user-img" :style="{'background-image': 'url(' + require('../../src/assets/images/person_3.jpg') + ')'}"></div>
 							<div class="pl-3">
 								<p class="name">Roger Scott</p>
 								<span class="position">Marketing Manager</span>
@@ -298,7 +284,7 @@
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-							<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+							<div class="user-img" :style="{'background-image': 'url(' + require('../../src/assets/images/person_2.jpg') + ')'}"></div>
 							<div class="pl-3">
 								<p class="name">Roger Scott</p>
 								<span class="position">Marketing Manager</span>
@@ -307,21 +293,7 @@
 					</div>
                 </div>
               </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-							<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-							<div class="pl-3">
-								<p class="name">Roger Scott</p>
-								<span class="position">Marketing Manager</span>
-							</div>
-						</div>
-					</div>
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -341,7 +313,7 @@
         <div class="row d-flex">
           <div class="col-lg-6 d-flex align-items-stretch ">
 			<div class="blog-entry d-flex">
-			<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_1.jpg');">
+			<a href="blog-single.html" class="block-20 img" :style="{'background-image': 'url(' + require('../../src/assets/images/image_1.jpg') + ')'}">
               </a>
               <div class="text p-4 bg-light">
 					<div class="meta">
@@ -356,7 +328,7 @@
           </div>
           <div class="col-lg-6 d-flex align-items-stretch ">
 				<div class="blog-entry d-flex">
-					<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_2.jpg');">
+					<a href="blog-single.html" class="block-20 img" :style="{'background-image': 'url(' + require('../../src/assets/images/image_2.jpg') + ')'}">
 				</a>
 				<div class="text p-4 bg-light">
 					<div class="meta">
@@ -371,7 +343,7 @@
           </div>
           <div class="col-lg-6 d-flex align-items-stretch ">
 				<div class="blog-entry d-flex">
-					<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_3.jpg');">
+					<a href="blog-single.html" class="block-20 img" :style="{'background-image': 'url(' + require('../../src/assets/images/image_3.jpg') + ')'}">
 				</a>
 				<div class="text p-4 bg-light">
 					<div class="meta">
@@ -386,7 +358,7 @@
           </div>
           <div class="col-lg-6 d-flex align-items-stretch ">
 				<div class="blog-entry d-flex">
-					<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_4.jpg');">
+					<a href="blog-single.html" class="block-20 img" :style="{'background-image': 'url(' + require('../../src/assets/images/image_4.jpg') + ')'}">
 				</a>
 				<div class="text p-4 bg-light">
 					<div class="meta">
