@@ -11,11 +11,6 @@ import './assets/css/flaticon.css';
 import './assets/css/style.css';
 
 
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import '@/assets/js/owl.carousel.min.js';
-import '@/assets/js/jquery-migrate-3.0.1.min.js';
-
-
 loadFonts()
 createApp(App)
   .use(router)

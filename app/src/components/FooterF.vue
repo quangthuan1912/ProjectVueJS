@@ -11,14 +11,14 @@
               Far far away, behind the word mountains, far from the countries.
             </p>
             <ul class="ftco-footer-social list-unstyled mt-2">
-              <li class="ftco-animate">
-                <a href="#"><span class="fa fa-twitter"></span></a>
+              <li class="">
+                <a href="#"><span class="fab fa-twitter"></span></a>
               </li>
-              <li class="ftco-animate">
-                <a href="#"><span class="fa fa-facebook"></span></a>
+              <li class="">
+                <a href="#"><span class="fab fa-facebook"></span></a>
               </li>
-              <li class="ftco-animate">
-                <a href="#"><span class="fa fa-instagram"></span></a>
+              <li class="">
+                <a href="#"><span class="fab fa-instagram"></span></a>
               </li>
             </ul>
           </div>

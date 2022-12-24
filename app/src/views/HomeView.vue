@@ -2,7 +2,8 @@
 <template>
   <SideBar />
   <SliderHead />
-        <section class="ftco-section ftco-no-pb">
+  <SectionIntro />
+    <section class="ftco-section ftco-no-pb">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" :style="{'background-image': 'url(' + require('../../src/assets/images/about.jpg') + ')'}">
@@ -385,7 +386,7 @@ import { defineComponent } from 'vue';
 import SideBar from '@/components/SideBar.vue';
 import SliderHead from '@/components/SliderHead.vue';
 import FooterF from '@/components/FooterF.vue';
-
+import SectionIntro from '@/components/SectionIntro.vue';
 
 export default defineComponent({
   name: 'HomeView',
@@ -393,7 +394,8 @@ export default defineComponent({
   components: {
     SideBar,
     SliderHead,
-    FooterF
+	FooterF,
+	SectionIntro
 },
 });
 </script>
